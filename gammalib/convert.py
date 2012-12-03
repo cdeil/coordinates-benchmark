@@ -6,7 +6,7 @@ http://gammalib.sourceforge.net
 import numpy as np
 import gammalib
 
-SUPPORTED_SYSTEMS = 'fk4 fk5 icrs galactic'.split()
+SUPPORTED_SYSTEMS = 'fk5 galactic'.split()
 
 def convert(coords, systems):
 
@@ -19,14 +19,14 @@ def convert(coords, systems):
     for ii, (lon, lat) in enumerate(zip(coords['lon'], coords['lat'])):
         sky_dir = gammalib.GSkyDir()
 
-        if systems['in'] in ['fk4', 'fk5', 'icrs']:
+        if systems['in'] == 'fk5':
             sky_dir.radec_deg(lon, lat)
         elif systems['in'] == 'galactic':
             sky_dir.lb_deg(lon, lat)
 
-        if systems['in'] in ['fk4', 'fk5', 'icrs']:
+        if systems['out'] == 'fk5':
             lon, lat = sky_dir.ra_deg(), sky_dir.dec_deg()
-        elif systems['in'] == 'galactic':
+        elif systems['out'] == 'galactic':
             lon, lat = sky_dir.l_deg(), sky_dir.b_deg()
 
         # Wrap longitude to range 0 to 360
