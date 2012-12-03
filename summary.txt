@@ -1,16 +1,27 @@
 Tool 1     Tool 2     System 1   System 2         Median         Mean          Max     Std.Dev.
 ----------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 astropy    kapteyn    fk5        fk4            0.295948     0.270620     0.368473     0.078536
 astropy    pyast      fk5        fk4            0.295830     0.270563     0.368431     0.078504
 astropy    pyephem    fk5        fk4            0.609480     0.553051     0.699393     0.153167
 astropy    pyslalib   fk5        fk4            0.295831     0.270563     0.368432     0.078504
+=======
+astropy    kapteyn    fk5        fk4         2170.053075  1958.582276  2513.763896   576.018313
+astropy    pyast      fk5        fk4         2170.053212  1958.582422  2513.763234   576.018385
+astropy    pyephem    fk5        fk4         2169.410428  1958.175231  2513.186025   575.912068
+astropy    pyslalib   fk5        fk4         2170.053212  1958.582422  2513.763233   576.018385
+>>>>>>> Big bugfix: report differences in arcsec, not deg
 kapteyn    pyast      fk5        fk4            0.004450     0.004216     0.006194     0.001322
 kapteyn    pyephem    fk5        fk4            0.564712     0.574623     1.020032     0.254971
 kapteyn    pyslalib   fk5        fk4            0.004448     0.004216     0.006193     0.001322
 pyast      pyephem    fk5        fk4            0.564797     0.574896     1.019420     0.254471
 pyast      pyslalib   fk5        fk4            0.000006     0.000005     0.000007     0.000001
 pyephem    pyslalib   fk5        fk4            0.564793     0.574892     1.019415     0.254470
+<<<<<<< HEAD
 astrolib   astropy    fk5        fk4            0.295835     0.270563     0.368426     0.078503
+=======
+astrolib   astropy    fk5        fk4         2170.053209  1958.582423  2513.763240   576.018385
+>>>>>>> Big bugfix: report differences in arcsec, not deg
 astrolib   kapteyn    fk5        fk4            0.004450     0.004217     0.006189     0.001322
 astrolib   pyast      fk5        fk4            0.000007     0.000007     0.000014     0.000003
 astrolib   pyephem    fk5        fk4            0.564799     0.574899     1.019430     0.254471
@@ -98,9 +109,15 @@ astropy    pyslalib   icrs       fk5            0.000000     0.000000     0.0000
 kapteyn    pyast      icrs       fk5            0.000000     0.000000     0.000000     0.000000
 kapteyn    pyslalib   icrs       fk5            0.000000     0.000000     0.000000     0.000000
 pyast      pyslalib   icrs       fk5            0.000000     0.000000     0.000000     0.000000
+<<<<<<< HEAD
 astropy    kapteyn    icrs       fk4            0.295948     0.270620     0.368473     0.078536
 astropy    pyast      icrs       fk4            0.295830     0.270563     0.368431     0.078504
 astropy    pyslalib   icrs       fk4            0.295831     0.270563     0.368432     0.078504
+=======
+astropy    kapteyn    icrs       fk4         2170.053096  1958.582272  2513.763899   576.018316
+astropy    pyast      icrs       fk4         2170.053232  1958.582418  2513.763237   576.018388
+astropy    pyslalib   icrs       fk4         2170.053232  1958.582418  2513.763237   576.018388
+>>>>>>> Big bugfix: report differences in arcsec, not deg
 kapteyn    pyast      icrs       fk4            0.004450     0.004216     0.006194     0.001322
 kapteyn    pyslalib   icrs       fk4            0.004448     0.004216     0.006193     0.001322
 pyast      pyslalib   icrs       fk4            0.000006     0.000005     0.000007     0.000001
