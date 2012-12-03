@@ -1,27 +1,16 @@
 Tool 1     Tool 2     System 1   System 2         Median         Mean          Max     Std.Dev.
 ----------------------------------------------------------------------------------------------
-<<<<<<< HEAD
 astropy    kapteyn    fk5        fk4            0.295948     0.270620     0.368473     0.078536
 astropy    pyast      fk5        fk4            0.295830     0.270563     0.368431     0.078504
 astropy    pyephem    fk5        fk4            0.609480     0.553051     0.699393     0.153167
 astropy    pyslalib   fk5        fk4            0.295831     0.270563     0.368432     0.078504
-=======
-astropy    kapteyn    fk5        fk4         2170.053075  1958.582276  2513.763896   576.018313
-astropy    pyast      fk5        fk4         2170.053212  1958.582422  2513.763234   576.018385
-astropy    pyephem    fk5        fk4         2169.410428  1958.175231  2513.186025   575.912068
-astropy    pyslalib   fk5        fk4         2170.053212  1958.582422  2513.763233   576.018385
->>>>>>> Big bugfix: report differences in arcsec, not deg
 kapteyn    pyast      fk5        fk4            0.004450     0.004216     0.006194     0.001322
 kapteyn    pyephem    fk5        fk4            0.564712     0.574623     1.020032     0.254971
 kapteyn    pyslalib   fk5        fk4            0.004448     0.004216     0.006193     0.001322
 pyast      pyephem    fk5        fk4            0.564797     0.574896     1.019420     0.254471
 pyast      pyslalib   fk5        fk4            0.000006     0.000005     0.000007     0.000001
 pyephem    pyslalib   fk5        fk4            0.564793     0.574892     1.019415     0.254470
-<<<<<<< HEAD
 astrolib   astropy    fk5        fk4            0.295835     0.270563     0.368426     0.078503
-=======
-astrolib   astropy    fk5        fk4         2170.053209  1958.582423  2513.763240   576.018385
->>>>>>> Big bugfix: report differences in arcsec, not deg
 astrolib   kapteyn    fk5        fk4            0.004450     0.004217     0.006189     0.001322
 astrolib   pyast      fk5        fk4            0.000007     0.000007     0.000014     0.000003
 astrolib   pyephem    fk5        fk4            0.564799     0.574899     1.019430     0.254471
@@ -36,6 +25,7 @@ astropy    kapteyn    fk5        galactic       0.349018     0.315269     0.4033
 astropy    pyast      fk5        galactic       0.349473     0.315815     0.404028     0.091816
 astropy    pyephem    fk5        galactic       0.350211     0.315151     0.403089     0.091718
 astropy    pyslalib   fk5        galactic       0.349473     0.315815     0.404028     0.091816
+astropy    gammalib   fk5        galactic       0.350212     0.315151     0.403089     0.091718
 kapteyn    pyast      fk5        galactic       0.001235     0.001110     0.001414     0.000319
 kapteyn    pyephem    fk5        galactic       0.007901     0.007152     0.009162     0.002086
 kapteyn    pyslalib   fk5        galactic       0.001235     0.001110     0.001414     0.000319
@@ -47,6 +37,11 @@ astrolib   kapteyn    fk5        galactic       0.217646     0.196028     0.2489
 astrolib   pyast      fk5        galactic       0.217783     0.196115     0.249066     0.055749
 astrolib   pyephem    fk5        galactic       0.222743     0.200759     0.254952     0.057060
 astrolib   pyslalib   fk5        galactic       0.217783     0.196115     0.249066     0.055749
+astrolib   gammalib   fk5        galactic       0.222740     0.200756     0.254949     0.057059
+gammalib   kapteyn    fk5        galactic       0.007898     0.007149     0.009158     0.002085
+gammalib   pyast      fk5        galactic       0.008613     0.007779     0.009984     0.002286
+gammalib   pyephem    fk5        galactic       0.000004     0.000004     0.000026     0.000001
+gammalib   pyslalib   fk5        galactic       0.008613     0.007779     0.009984     0.002286
 kapteyn    pyast      fk5        ecliptic       0.036442     0.033079     0.041557     0.008934
 kapteyn    pyephem    fk5        ecliptic       0.000524     0.000472     0.000601     0.000136
 kapteyn    pyslalib   fk5        ecliptic       0.059455     0.053652     0.068848     0.015781
@@ -109,15 +104,9 @@ astropy    pyslalib   icrs       fk5            0.000000     0.000000     0.0000
 kapteyn    pyast      icrs       fk5            0.000000     0.000000     0.000000     0.000000
 kapteyn    pyslalib   icrs       fk5            0.000000     0.000000     0.000000     0.000000
 pyast      pyslalib   icrs       fk5            0.000000     0.000000     0.000000     0.000000
-<<<<<<< HEAD
 astropy    kapteyn    icrs       fk4            0.295948     0.270620     0.368473     0.078536
 astropy    pyast      icrs       fk4            0.295830     0.270563     0.368431     0.078504
 astropy    pyslalib   icrs       fk4            0.295831     0.270563     0.368432     0.078504
-=======
-astropy    kapteyn    icrs       fk4         2170.053096  1958.582272  2513.763899   576.018316
-astropy    pyast      icrs       fk4         2170.053232  1958.582418  2513.763237   576.018388
-astropy    pyslalib   icrs       fk4         2170.053232  1958.582418  2513.763237   576.018388
->>>>>>> Big bugfix: report differences in arcsec, not deg
 kapteyn    pyast      icrs       fk4            0.004450     0.004216     0.006194     0.001322
 kapteyn    pyslalib   icrs       fk4            0.004448     0.004216     0.006193     0.001322
 pyast      pyslalib   icrs       fk4            0.000006     0.000005     0.000007     0.000001
@@ -134,6 +123,7 @@ astropy    kapteyn    galactic   fk5            0.353279     0.322220     0.4033
 astropy    pyast      galactic   fk5            0.353843     0.322757     0.404031     0.086827
 astropy    pyephem    galactic   fk5            0.352419     0.321956     0.403090     0.086617
 astropy    pyslalib   galactic   fk5            0.353843     0.322757     0.404031     0.086827
+astropy    gammalib   galactic   fk5            0.352420     0.321956     0.403091     0.086617
 kapteyn    pyast      galactic   fk5            0.001213     0.001098     0.001414     0.000326
 kapteyn    pyephem    galactic   fk5            0.007894     0.007138     0.009162     0.002053
 kapteyn    pyslalib   galactic   fk5            0.001213     0.001098     0.001414     0.000326
@@ -145,6 +135,11 @@ astrolib   kapteyn    galactic   fk5            0.216474     0.194940     0.2489
 astrolib   pyast      galactic   fk5            0.217124     0.195036     0.249042     0.056383
 astrolib   pyephem    galactic   fk5            0.221211     0.199488     0.254886     0.057882
 astrolib   pyslalib   galactic   fk5            0.217124     0.195036     0.249042     0.056383
+astrolib   gammalib   galactic   fk5            0.221209     0.199485     0.254883     0.057881
+gammalib   kapteyn    galactic   fk5            0.007890     0.007135     0.009158     0.002052
+gammalib   pyast      galactic   fk5            0.008567     0.007777     0.009984     0.002223
+gammalib   pyephem    galactic   fk5            0.000004     0.000004     0.000015     0.000001
+gammalib   pyslalib   galactic   fk5            0.008567     0.007777     0.009984     0.002223
 astropy    kapteyn    galactic   fk4            0.294908     0.268310     0.342887     0.078399
 astropy    pyast      galactic   fk4            0.289296     0.305090     0.586086     0.153733
 astropy    pyephem    galactic   fk4            0.447035     0.407286     0.518494     0.114508
