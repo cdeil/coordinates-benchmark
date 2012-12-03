@@ -19,6 +19,7 @@ CELESTIAL_CONVERSIONS = [dict(zip(['in', 'out'], _))
                          if _[0] != _[1]]
 
 TOOLS = 'astropy kapteyn pyast pyephem pyslalib astrolib idl'.split()
+TOOLS.append('gammalib')
 TOOL_PAIRS = [_ for _ in itertools.product(TOOLS, TOOLS)
               if _[0] < _[1]]
 
